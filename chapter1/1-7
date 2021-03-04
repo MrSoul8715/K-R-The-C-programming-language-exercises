@@ -1,0 +1,19 @@
+/*
+* Filename:  reverseFC.c
+*
+* Author:  HuQing <qing.hu@whu.edu.cn>
+* Date:   4-Mar-2021
+*
+* The C Programming Language, second edition,
+* by Brian Kernighan and Dennis Ritchie
+*
+* Exercise 1-7, page 17
+*
+* Write a program to print the value of EOF.
+*/
+#include <stdio.h>
+
+int main(void) {
+	printf("The value of EOF is:%d.\n", EOF);
+	return 0;
+}
