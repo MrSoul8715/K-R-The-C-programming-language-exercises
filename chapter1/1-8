@@ -1,0 +1,33 @@
+/*
+* Filename:  countBTN.c
+*
+* Author:  HuQing <qing.hu@whu.edu.cn>
+* Date:   4-Mar-2021
+*
+* The C Programming Language, second edition,
+* by Brian Kernighan and Dennis Ritchie
+*
+* Exercise 1-8, page 20
+*
+* Write a program to count blanks, tabs, and newlines.
+*/
+#include <stdio.h>
+
+int main(void) {
+	int bs = 0;
+	int ts = 0;
+	int ns = 0;
+	int c;
+	while ((c = getchar()) != EOF) {
+		if (c == ' ')
+			++bs;
+		else if (c == '\t')
+			++ts;
+		else if (c == '\n')
+			++ns;
+		else
+			;
+	}
+	printf("Blanks = %d\tTabs = %d\tNewlines = %d.\n", bs,ts,ns);
+	return 0;
+}
