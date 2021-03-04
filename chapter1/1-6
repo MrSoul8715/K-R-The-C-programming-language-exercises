@@ -1,0 +1,20 @@
+/*
+* Filename:  reverseFC.c
+*
+* Author:  HuQing <qing.hu@whu.edu.cn>
+* Date:   4-Mar-2021
+*
+* The C Programming Language, second edition,
+* by Brian Kernighan and Dennis Ritchie
+*
+* Exercise 1-6, page 17
+*
+* Verify that the expression getchar() != EOF is 0 or 1.
+*/
+#include <stdio.h>
+
+int main(void) {
+	printf("Please enter a character:\n");
+	printf("The expression of \"getchar() != EOF\" is:%d.\n", getchar() != EOF);
+	return 0;
+}
