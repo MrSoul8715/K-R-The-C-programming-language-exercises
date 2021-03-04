@@ -1,0 +1,34 @@
+/*
+* Filename:  reverseFC.c
+*
+* Author:  HuQing <qing.hu@whu.edu.cn>
+* Date:   4-Mar-2021
+*
+* The C Programming Language, second edition,
+* by Brian Kernighan and Dennis Ritchie
+*
+* Exercise 1-9, page 20
+*
+* Write a program to copy its input to its output, replacing each string
+* of one or more blanks by a single blank.
+*/
+#include <stdio.h>
+
+int main(void) {
+	int c;
+	int get_blanks_in = 0;
+	printf("Please input some characters, end with Ctrl+z:\n");
+	while ((c = getchar()) != EOF) {
+		if (c == ' ') {
+			if (!get_blanks_in) {
+				putchar(c);
+				get_blanks_in = 1;
+			}			
+		}
+		else {
+			putchar(c);
+			get_blanks_in = 0;
+		}
+	}
+	return 0;
+}
